@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TagChatNotes – Privacy Policy</title>
+  <title>TagChatNotes – Datenschutzerklärung / Privacy Policy</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=DM+Sans:wght@400;500&display=swap');
 
@@ -75,6 +75,19 @@
       color: #5A4BD1;
     }
 
+    /* Divider between the two language sections */
+    .lang-divider {
+      margin: 3.5rem 0 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #E0DDD8;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.85rem;
+      color: #999;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
     .contact-box {
       margin-top: 2rem;
       padding: 1.25rem;
@@ -98,42 +111,98 @@
       font-size: 0.8rem;
       color: #999;
     }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    footer nav a {
+      color: #7A7A7A;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    footer nav a:hover {
+      border-bottom-color: #6C5CE7;
+      color: #6C5CE7;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <!-- ========== Header ========== -->
     <header>
-      <h1>Privacy Policy</h1>
+      <h1>Datenschutzerklärung &middot; Privacy Policy</h1>
       <div class="app-name">TagChatNotes</div>
-      <div class="effective-date">Effective date: April 15, 2026</div>
+      <div class="effective-date">Gültig ab &middot; Effective date: 15. April 2026</div>
     </header>
 
-    <p>This privacy policy describes how TagChatNotes ("the App") handles user information. We are committed to being transparent about our data practices.</p>
+    <!-- ========== German version ========== -->
+    <section lang="de">
+      <p>Diese Datenschutzerklärung beschreibt, wie TagChatNotes („die App") mit Nutzerdaten umgeht. Uns ist ein transparenter Umgang mit deinen Daten wichtig.</p>
 
-    <h2>Data Collection</h2>
-    <p>The App does not collect, store, or transmit any personal data. No analytics, crash reporting, or tracking tools are used. The App does not require user registration, login, or any form of account creation.</p>
+      <h2>Datenerhebung</h2>
+      <p>TagChatNotes erhebt, überträgt oder teilt keinerlei personenbezogene Daten. Alle Informationen, die du eingibst — einschließlich Nachrichten und Tags — verbleiben ausschließlich auf deinem Gerät.</p>
 
-    <h2>Local Storage Only</h2>
-    <p>All notes, tags, and app settings are stored locally on your device. This data never leaves your device and is not accessible to us or any third party. If you uninstall the App, all locally stored data is removed with it.</p>
+      <h2>Nur lokale Speicherung</h2>
+      <p>Deine Daten werden lokal auf deinem Gerät in einer eingebetteten SQLite-Datenbank gespeichert. Es werden keine Daten an externe Server gesendet. Wenn du die App deinstallierst, werden alle Daten unwiderruflich gelöscht.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>The App does not integrate any third-party services for analytics, advertising, or data processing. No data is shared with any third party.</p>
+      <h2>Drittanbieterdienste</h2>
+      <p>Diese App bindet keine Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern ein.</p>
 
-    <h2>Internet Access</h2>
-    <p>The App does not require an internet connection to function. No data is sent to or received from any external server.</p>
+      <h2>Internetzugang</h2>
+      <p>TagChatNotes benötigt keine Internetverbindung und führt keinerlei Netzwerkanfragen durch.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy if the App's functionality changes in the future. Any changes will be reflected on this page with an updated effective date.</p>
+      <h2>Änderungen dieser Erklärung</h2>
+      <p>Sollte diese Datenschutzerklärung aktualisiert werden, wird die neue Fassung in einem künftigen App-Update bereitgestellt. Das Gültigkeitsdatum oben auf dieser Seite wird entsprechend angepasst.</p>
+    </section>
 
-    <h2>Contact</h2>
+    <!-- ========== Divider ========== -->
+    <div class="lang-divider">English version below</div>
+
+    <!-- ========== English version ========== -->
+    <section lang="en">
+      <p>This privacy policy describes how TagChatNotes ("the App") handles user information. We are committed to being transparent about our data practices.</p>
+
+      <h2>Data Collection</h2>
+      <p>The App does not collect, store, or transmit any personal data. No analytics, crash reporting, or tracking tools are used. The App does not require user registration, login, or any form of account creation.</p>
+
+      <h2>Local Storage Only</h2>
+      <p>All notes, tags, and app settings are stored locally on your device in an embedded SQLite database. This data never leaves your device and is not accessible to us or any third party. If you uninstall the App, all locally stored data is removed with it.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>The App does not integrate any third-party services for analytics, advertising, or data processing. No data is shared with any third party.</p>
+
+      <h2>Internet Access</h2>
+      <p>The App does not require an internet connection to function. No data is sent to or received from any external server.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this privacy policy if the App's functionality changes in the future. Any changes will be reflected on this page with an updated effective date.</p>
+    </section>
+
+    <!-- ========== Shared contact box ========== -->
     <div class="contact-box">
-      <p>If you have any questions about this privacy policy, you can reach us at:</p>
+      <p><strong>Kontakt &middot; Contact</strong></p>
+      <p>Bei Fragen zu dieser Datenschutzerklärung erreichst du uns unter:</p>
+      <p>For questions about this privacy policy, you can reach us at:</p>
       <p><a href="mailto:ttt.studio.dev@gmail.com">ttt.studio.dev@gmail.com</a></p>
     </div>
 
+    <!-- ========== Footer ========== -->
     <footer>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
       &copy; 2026 TagChatNotes. All rights reserved.
     </footer>
+
   </div>
 </body>
 </html>
