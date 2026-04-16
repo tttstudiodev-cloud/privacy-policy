@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TagChatNotes – Chat with yourself. Tag with hashtags.</title>
+  <meta name="description" content="TagChatNotes is a self-chat notes app for iOS and Android. Message yourself, tag with hashtags like #todo or #diary, and find everything instantly.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FAFAF8;
+      color: #2C2C2C;
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ---------- Header / logo ---------- */
+    .site-header {
+      margin-bottom: 3rem;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #1A1A1A;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #E0DDD8;
+    }
+
+    .hero h1 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero .accent {
+      color: #6C5CE7;
+      font-style: italic;
+    }
+
+    .hero .tagline {
+      font-size: 1.05rem;
+      color: #5A5A5A;
+      max-width: 520px;
+    }
+
+    /* ---------- Features ---------- */
+    .features {
+      margin-bottom: 3rem;
+    }
+
+    .features h2 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature {
+      margin-bottom: 1.75rem;
+    }
+
+    .feature h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 0.25rem;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #3D3D3D;
+      margin: 0;
+    }
+
+    /* ---------- Download section ---------- */
+    .download {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: #F0EEEA;
+      border-radius: 8px;
+    }
+
+    .download h2 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 0.5rem;
+    }
+
+    .download p {
+      font-size: 0.9rem;
+      color: #5A5A5A;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.6rem 1.1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #7A7A7A;
+      background: transparent;
+      border: 1px dashed #C8C3BB;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #E0DDD8;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    footer nav a {
+      color: #7A7A7A;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    footer nav a:hover {
+      border-bottom-color: #6C5CE7;
+      color: #6C5CE7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ========== Header ========== -->
+    <div class="site-header">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">#</span>
+        TagChatNotes
+      </a>
+    </div>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+      <h1>
+        Chat with yourself.<br>
+        Tag with <span class="accent">hashtags</span>.
+      </h1>
+      <p class="tagline">
+        TagChatNotes turns your thoughts into a conversation. Send yourself a
+        message, add a tag like <strong>#todo</strong> or <strong>#diary</strong>,
+        and find it again the moment you need it.
+      </p>
+    </section>
+
+    <!-- ========== Features ========== -->
+    <section class="features">
+      <h2>What it does</h2>
+
+      <div class="feature">
+        <h3>Write like you're texting a friend</h3>
+        <p>Short notes, long notes, half-thoughts. Your notes flow like a chat, in the order you had them.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Organize with hashtags</h3>
+        <p>No folders, no nested menus. Tap a hashtag to filter instantly.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Everything stays on your device</h3>
+        <p>Your notes live on your phone in a local database. No account, no cloud, no tracking.</p>
+      </div>
+    </section>
+
+    <!-- ========== Download ========== -->
+    <section class="download">
+      <h2>Get the app</h2>
+      <p>Currently in TestFlight. Public release coming soon.</p>
+      <span class="badge">iOS — Coming Soon</span>
+      <span class="badge">Android — Coming Soon</span>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+      <nav>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:ttt.studio.dev@gmail.com">Contact</a>
+      </nav>
+      &copy; 2026 TagChatNotes. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
